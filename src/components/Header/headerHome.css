@@ -1,0 +1,7 @@
+.home-header {
+  display: flex;
+  min-height: 10vh;
+  background-color: rgba(62, 127, 212, 0.932);
+  align-items: center;
+  justify-content: center;
+}

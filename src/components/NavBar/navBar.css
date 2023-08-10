@@ -1,0 +1,22 @@
+.text-gradient,.text-gradient:hover{
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#efb810  ,#997619 ,#725817 ,#4c3b14 ,#29200e ,#000000, #ffffff,#efb810, #f6c34a, #fbcf71,#efb810  ,#997619 ,#725817 ,#4c3b14 ,#29200e ,#000000);
+    background-clip:text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation-name: gradient;
+    animation-duration:10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes gradient{
+    0% {background-position:0% 30%;}
+    25% {background-position: 30% 60%;}
+    50% {background-position: 60% 80%; }
+    75%{background-position: 80% 100%; }
+    100%{background-position: 100% 80%;}
+}

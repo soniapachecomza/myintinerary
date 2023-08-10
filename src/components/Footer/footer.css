@@ -1,0 +1,12 @@
+.footer{
+    min-height: 90px;
+    background-color: rgba(62, 127, 212, 0.932);
+  }
+.logo{
+  width:8vw;
+  height:12vh;
+}
+.logos{
+  width: 15vw;
+  height: 25vh;
+}

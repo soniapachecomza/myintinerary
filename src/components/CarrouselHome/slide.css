@@ -1,0 +1,20 @@
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3%;
+   
+}
+ 
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ .img-city{ 
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+} 

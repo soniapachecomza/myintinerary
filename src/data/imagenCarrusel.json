@@ -1,0 +1,69 @@
+{
+  "slides": [
+    {
+      "slideTitle": "Cities of Argentina",
+
+      "image": [
+        {
+          "title": "Neuquen",
+          "href": "/neuquen.jpg"
+        },
+        {
+          "title": "Iguazu",
+          "href": "/iguazu.jpg"
+        },
+        {
+          "title": "Mendoza",
+          "href": "/mendoza.jpg"
+        },
+        {
+          "title": "Ushuaia",
+          "href": "/ushuaia.jpg"
+        }
+      ]
+    },
+    {
+      "slideTitle": "Most popular destinations",
+      "image": [
+        {
+          "title": "Venecia",
+          "href": "/venecia.jpg"
+        },
+        {
+          "title": "Paris",
+          "href": "/paris.jpg"
+        },
+        {
+          "title": "Miami",
+          "href": "/miami.jpg"
+        },
+        {
+          "title": "London",
+          "href": "/london.jpg"
+        }
+      ]
+    },
+    {
+      "slideTitle": "Asian tourist destinations",
+
+      "image": [
+        {
+          "title": "Shangai",
+          "href": "/shangai.jpg"
+        },
+        {
+          "title": "Tokio",
+          "href": "/tokio.jpg"
+        },
+        {
+          "title": "Seul",
+          "href": "/seul.jpg"
+        },
+        {
+          "title": "Qatar",
+          "href": "/qatar.jpg"
+        }
+      ]
+    }
+  ]
+}
