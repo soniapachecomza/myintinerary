@@ -1,0 +1,17 @@
+.bg-search{
+    background: url('../../assets/search.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 35vh;
+    filter: sepia(60%);
+}
+
+.cities-height{
+    min-height: 35vh;
+}
+
+.details{
+    min-height: 70vh;
+}
+
