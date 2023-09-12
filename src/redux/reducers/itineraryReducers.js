@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { cargarItinerarySync, cargarItineraries, cargarItinerary } from '../actions/itineraryActions.js'
+import { cargarItinerarySync, cargarItineraries, cargarItinerary } from '../actions/itineraryActions.js';
 
 const initialState = {
     itineraries: [],

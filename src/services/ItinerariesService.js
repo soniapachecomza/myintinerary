@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const itineriesQueries = axios.create( {
-    baseURL: 'http://localhost:3000/api/itineraries',
+    baseURL: 'http://localhost:5500/api/itineraries',
 } )
 
 export const getAllItineraries = async (queryParams="") => {

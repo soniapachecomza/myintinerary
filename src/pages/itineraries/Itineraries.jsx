@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 import { Link as Anchor } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
-import ItineraryCard from '../itineraryCard/itineraryCard.jsx';
+import ItineraryCard from '../../components/itineraryCard/itineraryCard';
 
 
 const Itineraries = ({ itineraries }) => {

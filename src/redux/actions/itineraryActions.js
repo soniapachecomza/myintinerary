@@ -1,27 +1,39 @@
 import { createAction, createAsyncThunk } from "@reduxjs/toolkit";
-import { getAllItineraries, getOneItinerary } from "../../services/ItinerariesService.js";
+import {
+  getAllItineraries,
+  getOneItinerary,
+} from "../../services/ItinerariesService.js";
 
-export const cargarItinerarySync = createAction('cargarItinerarySync', (itinerary) => {
+export const cargarItinerarySync = createAction(
+  "cargarItinerarySync",
+  (itinerary) => {
     return {
-        payload: itinerary
+      payload: itinerary,
     };
-});
+  }
+);
 
-export const cargarItineraries = createAsyncThunk('cargarItineraries', async () => {
+export const cargarItineraries = createAsyncThunk(
+  "cargarItineraries",
+  async () => {
     try {
-        const response = await getAllItineraries();
-        return response;
+      const response = await getAllItineraries();
+      return response;
     } catch (error) {
-        throw error;
+      throw error;
     }
-});
+  }
+);
 
-export const cargarItinerary = createAsyncThunk('cargarItinerary', async ({ id }) => {
+export const cargarItinerary = createAsyncThunk(
+  "cargarItinerary",
+  async ({ id }) => {
     try {
-        const itinerary = await getOneItinerary(id);
-        return itinerary;
+      const itinerary = await getOneItinerary(id);
+      return itinerary;
     } catch (error) {
-        console.log(error);
-        return null;
+      console.log(error);
+      return null;
     }
-});
+  }
+);

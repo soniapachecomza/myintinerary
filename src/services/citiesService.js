@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 
-const citiesQueries = axios.create({baseURL:'http://localhost:3000/api/cities'} )
+const citiesQueries = axios.create({baseURL:'http://localhost:5500/api/cities'} )
     
 
 export const getAllCities = async (queryParams = "") => {

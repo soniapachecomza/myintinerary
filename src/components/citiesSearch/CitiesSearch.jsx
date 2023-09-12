@@ -36,6 +36,7 @@ const CitiesSearch = () => {
     }
 
     const handleFilterChange = () => {
+        console.log(inputBusqueda.current.value);
         dispatch(filtrarCities(inputBusqueda.current.value));
     }
 
@@ -62,15 +63,20 @@ const CitiesSearch = () => {
             {!visibleCities.length == 0?(
             <div className="d-flex align-content-center flex-wrap justify-content-evenly">
                 {visibleCities.map((card, index) => (
-                    <div key={card._id} className="card bg-dark text-white align-self-center ">
+                    <div key={card._id} className="card bg-info text-white align-self-center ">
                     <Anchor to={`./${card._id}`} >
+                    <header>
+                        <h5 className="card-title cardTitleName">{card.name}</h5>
+                    </header>
                     <img src={card.image} className="card-img" 
-                        style={{width: '200px', height:'150px'}} 
+                        style={{width: '350px', height:'200px'}} 
                             alt={card.name}/>
-                        <div className="card-img-overlay">
-                            <h5 className="card-title cardTitleName">{card.name}</h5>
-                            <h6 className='card-title cardTitleCountry'>{card.country}</h6>
+                        <div className="card-img-overlay">                          
+                           
                         </div>
+                        <footer className='card-title cardTitleCountry'>
+                        <h6 >{card.country}</h6>
+                        </footer>
                     </Anchor>
                 </div>
                 ))}

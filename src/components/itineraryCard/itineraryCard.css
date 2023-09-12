@@ -1,0 +1,14 @@
+.img-fluid{
+    width: 100%;
+    height: 80%;
+}
+.under{
+    background: url('../../assets/img/under.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(60%);
+}
+.card-text{
+    font-weight: bold;
+}

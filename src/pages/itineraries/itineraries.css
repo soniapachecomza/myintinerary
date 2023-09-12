@@ -1,0 +1,8 @@
+.price-indicator {
+    height: 20px; 
+    background-image: url('../itineraries/billete-de-un-dolar.png'); 
+    background-repeat: repeat-x;
+    background-size: contain; 
+  }
+
+  

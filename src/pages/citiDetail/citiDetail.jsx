@@ -1,13 +1,13 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './citiDetail.css'
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import './citiDetail.css';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { cargarCity } from "../../redux/actions/citiesActions.js"
+import { cargarCity } from "../../redux/actions/citiesActions.js";
 import { getOneCity } from '../../services/citiesService';
 import { Link as Anchor } from 'react-router-dom';
-import Itineraries from '../../components/itineraries/Itineraries.jsx';
+import Itineraries from '../itineraries/Itineraries.jsx';
 
 const CitiDetail = () => {
     const params = useParams()
@@ -23,13 +23,13 @@ const CitiDetail = () => {
     return (
         <div className="container city-details-container">
             <div className="row city-details">
-                {city ? ( // Verificar si city.name está definido . aca podria haber sido length >0 tambien. 
+                {city ? ( 
                     <>
                         <div className="col-xs-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                            <h1>{city.name}</h1>
-                            <h5>Country: {city.country}</h5>
-                            <h5>Description: {city.description}</h5>
-                            <h5>Coin: {city.coin}</h5>
+                            <h1 className="m-3 fw-bold fs-1">{city.name}</h1>
+                            <h5 className="m-3">Country: {city.country}</h5>
+                            <h5 className="m-3">Description: {city.description}</h5>
+                            <h5 className="m-3 fw-bold fs-4">Coin: {city.coin}</h5>
                         </div>
                         <div className="col-xs-12 col-md-6 d-flex align-items-center">
                             <img src={city.image} alt={city.name} className="img-fluid" />
